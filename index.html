@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quicklist | Lista de Tarefas</title>
+
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <div id="app" class="container pd-y">
+        <header>
+            <img src="./assets/logo.png" alt="Logo da Quicklist" class="desktop-only inline">
+        </header>
+
+        <form method="post" class="inline">
+            <a href="#" class="flex items-center">
+                <ion-icon name="arrow-back"></ion-icon>
+                <span>Voltar</span>
+            </a>
+            <h1>Compras da semana</h1>
+
+            <div class="add-task-container grid gap-16">
+                <input type="text" placeholder="Adicione um novo item">
+                <button>Adicionar item</button>
+            </div>
+
+            <ul class="tasks-container grid gap-12">
+                <li class="task flex items-center gap-12">
+                    <div class="checkbox-wrapper">
+                        <div class="icon-checkbox"></div>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <span>Pão de forma</span>
+                    <button type="button">
+                        <img src="./assets/trash.svg" alt="">
+                    </button>
+                </li>
+            </ul>
+
+            <div class="modal-delete flex items-center">
+                <img src="./assets/warning-circle-filled.svg" alt="">
+                <span>O item foi removido da lista</span>
+                <button>
+                    <img src="./assets/close-icon.svg" alt="">
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</body>
+</html>

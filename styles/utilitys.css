@@ -1,0 +1,47 @@
+.container {
+    --max-width: 390px;
+    width: min(var(--max-width), 100% - var(--pd-x) * 2);
+    margin-inline: auto;
+}
+
+.inline {
+    margin-inline: auto;
+}
+
+.pd-y {
+    padding-block: var(--pd-y);
+}
+
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.gap-16 {
+    gap: 1.6rem;
+}
+
+.gap-12 {
+    gap: 1.2rem;
+}
+
+.desktop-only {
+    display: none;
+}
+
+@media (width >= 80em) {
+    .container {
+        --max-width: 1280px;
+    }
+
+    .desktop-only {
+        display: inherit;
+    }
+}

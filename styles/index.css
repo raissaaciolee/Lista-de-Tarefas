@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url(utilitys.css);
+@import url(app.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-primary: #F4F5FB;
+    --background-secondary: #FFFFFF;
+    --color-brand: #CA3884;
+    --color-brand-hover: #A52C6B;
+    --color-danger: #C93847;
+    --content-primary: #080B12;
+    --content-secondary: #374151;
+    --content-tertiary: #9CA3AF;
+    --border-primary: #D1D5DB;
+    --border-hover: #B9C2D0;
+
+    font-size: 62.5%;
+
+    --ff-inter: "Inter", system-ui, sans-serif;
+
+    --fs-lg: 2.4rem;
+    --fs-md: 1.6rem;
+    --fs-sm: 1.6rem;
+    --fs-xs: 1.4rem;
+
+    --title: bold var(--fs-lg)/3.2rem var(--ff-inter);
+    --paragraph: 500 var(--fs-sm)/2rem var(--ff-inter);
+    --label: 600 var(--fs-sm)/2rem var(--ff-inter);
+    --link: 500 var(--fs-xs)/1.6rem var(--ff-inter);
+
+    --pd-x: 3.2rem;
+    --pd-y: 7.8rem 17rem;
+}
+
+html {
+    font-family: var(--ff-inter);
+}
+
+body {
+    background-color: var(--background-primary);
+}
+
+@media (width >= 80em) {
+    :root {
+        --fs-lg: 3.2rem;
+        --fs-sm: 2rem;
+        --fs-xs: 1.6rem; 
+
+        --pd-x: 20rem;
+        --pd-y: 2.5rem 13.7rem;
+    }
+}
