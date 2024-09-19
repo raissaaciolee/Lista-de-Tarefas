@@ -55,7 +55,7 @@ const deleteTask = (i) => {
 
     setTimeout(function() {
         modal.classList.add("hide-modal")
-    }, 3000)
+    }, 1000)
 }
 
 buttonAddTask.addEventListener("click", addTaskInList)
